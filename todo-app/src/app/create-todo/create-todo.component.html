@@ -1,0 +1,7 @@
+
+<label>
+    Task:
+    <input type="text" [formControl]= "task">
+    <p> {{task.value}}</p>
+    <button (submit)="createTask()">Create</button>
+</label>

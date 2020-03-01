@@ -24,4 +24,9 @@ add(todo:string){
   this.todoList.push({task: todo})
 }
 
+onDelete(i){
+  console.log('print i', i)
+this.todoList.splice(i, 1)
+}
+
 }

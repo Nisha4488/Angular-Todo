@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
 
 
@@ -18,8 +18,11 @@ export class CreateTodoComponent implements OnInit {
     task: new FormControl('')
   })
 
+  @Output() addTodo = new EventEmitter<string>()
+
   onSubmit(){
-    console.log(this.todoForm.value)
+    console.log('value', this.todoForm.value.task)
+    this.addTodo.emit(this.todoForm.value.task)
   }
   
   

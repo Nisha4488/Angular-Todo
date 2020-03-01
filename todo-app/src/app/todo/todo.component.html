@@ -1,5 +1,6 @@
 <h1>ToDo App</h1>
 <div *ngFor = "let todo of todoList">
     <h3>{{todo.task}}</h3>
+    
 </div>
-
+<app-create-todo (addTodo) = "add($event)"> </app-create-todo>

@@ -19,4 +19,9 @@ export class TodoComponent implements OnInit {
   ngOnInit(): void {
   }
 
+add(todo:string){
+  
+  this.todoList.push({task: todo})
+}
+
 }

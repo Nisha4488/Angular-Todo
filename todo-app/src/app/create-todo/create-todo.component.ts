@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormControl } from '@angular/forms';
+import { FormControl, FormGroup } from '@angular/forms';
 
 
 @Component({
@@ -13,10 +13,16 @@ export class CreateTodoComponent implements OnInit {
   
   constructor() { }
   
-  task = new FormControl('');
-  createTask(){
-    this.task.setValue("shopping")
+  todoForm = new FormGroup({
+
+    task: new FormControl('')
+  })
+
+  onSubmit(){
+    console.log(this.todoForm.value)
   }
+  
+  
   ngOnInit(): void {
     
   }

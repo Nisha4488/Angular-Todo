@@ -16,6 +16,7 @@ export class CreateTodoComponent implements OnInit {
   todoForm = new FormGroup({
 
     task: new FormControl('')
+    
   })
 
   @Output() addTodo = new EventEmitter<string>()
@@ -23,6 +24,7 @@ export class CreateTodoComponent implements OnInit {
   onSubmit(){
     console.log('value', this.todoForm.value.task)
     this.addTodo.emit(this.todoForm.value.task)
+    
   }
   
   

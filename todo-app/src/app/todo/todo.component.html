@@ -1,7 +1,16 @@
 <h1>ToDo App</h1>
 <div *ngFor = "let todo of todoList; let i = index" [attr.data-index]="i">
-    <h3>{{todo.task}}</h3>
-<button (click)= "onDelete(i)">Delete</button>
+    
+  
+    <h3 *ngIf="todo.status">
+        <s>{{todo.task}}</s>
+    </h3>
+      
+      <h3 *ngIf="!todo.status">
+       {{todo.task}}
+      </h3>
+    <button (click)= "onDelete(i)">Delete</button>
+    <input type="checkbox" [checked]="todo.status" (change)="onStatusChange($event, i)">
     
 </div>
 <app-create-todo (addTodo) = "add($event)"> </app-create-todo>

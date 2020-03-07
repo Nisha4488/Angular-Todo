@@ -1,0 +1,35 @@
+<!-- <p>xyz works!</p>
+<div *ngFor= "let product of productList">
+    <h3>{{product.name}}</h3>
+    <div *ngIf =" product.price>=500">
+        <h3>Affordable Phone: {{product.name}}</h3>
+    </div>
+</div> -->
+
+<!-- /** Loop
+
+<div *ngFor= "product of productList"></div>
+<h3>{{product.name}}</h3>
+
+/** if-else
+
+<div *ngIf= "product.name"></div>
+<h3>{{product.name}}</h3>
+
+/** HTML Dynamic attribute and property binding
+
+<a [href]= "product.url" [title]= "product.name" >Youtube</a>
+
+/** Event binding
+
+<button (click)= "handleClick()">Click Me</button> -->
+
+<h1>Product Details</h1>
+<div *ngFor= 'let product of items'>
+<div *ngIf= 'product'>
+    <h3>{{product.name}}</h3>
+    <p>{{product.description}}</p>
+    <button (click)= "addToCart(product)">Buy</button>
+</div>
+</div>
+    

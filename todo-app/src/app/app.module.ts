@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 import { TodoComponent } from './todo/todo.component';
 import { CreateTodoComponent } from './create-todo/create-todo.component';
 import { UserDetailsComponent } from './user-details/user-details.component';
+import { HeaderComponent } from './header/header.component';
 
 
 @NgModule({
@@ -16,15 +17,14 @@ import { UserDetailsComponent } from './user-details/user-details.component';
     TodoComponent,
     CreateTodoComponent,
     UserDetailsComponent,
-   
+    HeaderComponent,
     ],
     
   imports: [
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
-    HttpClientModule
-   
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

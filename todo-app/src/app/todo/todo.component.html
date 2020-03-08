@@ -1,5 +1,7 @@
 <h1>ToDo App</h1>
-<div *ngFor = "let todo of todoList; let i = index" [attr.data-index]="i">
+<h1>User Details</h1>
+
+<div *ngFor = "let todo of todoList; let i = index" [attr.data-index]="i" >
     
   
     <h3 *ngIf="todo.status">

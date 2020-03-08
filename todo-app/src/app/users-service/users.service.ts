@@ -9,9 +9,8 @@ export class UsersService {
   constructor(
     private http: HttpClient
   ) { }
-
-  usersUrl= 'assets/users.json'
-
+    usersUrl = "https://api.github.com/users"
+    
   getUsers(){
     return this.http.get(this.usersUrl)
   }

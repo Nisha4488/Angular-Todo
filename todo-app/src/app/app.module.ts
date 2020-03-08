@@ -7,6 +7,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TodoComponent } from './todo/todo.component';
 import { CreateTodoComponent } from './create-todo/create-todo.component';
+import { UserDetailsComponent } from './user-details/user-details.component';
 
 
 @NgModule({
@@ -14,6 +15,7 @@ import { CreateTodoComponent } from './create-todo/create-todo.component';
     AppComponent,
     TodoComponent,
     CreateTodoComponent,
+    UserDetailsComponent,
    
     ],
     

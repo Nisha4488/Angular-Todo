@@ -1,0 +1,5 @@
+<p>user-details works!</p>
+<div *ngFor= 'let user of users' class="styleUser">
+    <img src= "{{user.avatar_url}}" class="styleImage">
+    <a href="{{user.html_url}}">{{user.login}}</a>
+</div>
